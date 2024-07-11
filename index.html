@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div>
+        <select class="selectBox" id="comboBoxLanguage" onchange="updateLanguage()">
+            <option value="default">System default</option>
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+            <option value="fr-FR">Français</option>
+            <option value="de-DE">Deutsch</option>
+            <option value="es-ES">Español</option>
+            <option value="ja-JP">日本語 (Nihongo)</option>
+            <option value="ru-RU">Русский (Russkiy)</option>
+            <option value="zh-CN">中文 (Zhōngwén)</option>
+        </select>
+
+        <div id="calendarHeader">
+            <button id="prevYear" ><<</button>
+            <button id="prevMonth" >◀</button>
+            <span id="currentMonth"></span>
+            <button id="nextMonth" >▶</button>
+            <button id="nextYear" >>></button>
+        </div>
+        <table id="tblCalendar">
+            <div id="todayDate"></div>
+            <tbody id="calendarTBody">
+               
+            </tbody>                 
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

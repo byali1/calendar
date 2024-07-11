@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dayNo:hover{
+    background-color: rgba(128, 128, 128, 0.596);
+    cursor: pointer;
+}
+
+#calendarHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+#prevMonth, #nextMonth {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+#currentMonth {
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+#tblCalendar {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+#tblCalendar th, #tblCalendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#tblCalendar th {
+    background-color: #f2f2f2;
+}
+
+#tblCalendar td.solid-day {
+    color: #ddd;
+}
+
+#tblCalendar td.today {
+    background-color: yellowgreen;
+}
